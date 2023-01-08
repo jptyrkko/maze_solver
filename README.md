@@ -16,7 +16,7 @@ Please note the following:
 * The application is delivered unbuilt but it has two alternative automatic
   build mechanisms. The primary mechanism is "build_all_with_cmake.sh", a shell
   script calling cmake and make. It builds all of the executables, except
-  the build_debug. An auxiliary build script build_all_without_cmake.sh
+  the build_debug. An auxiliary build script "build_all_without_cmake.sh"
   will also build the application debug version and place it in build_debug.
 
 * The executable is in "build" diretory. It is invoked as
