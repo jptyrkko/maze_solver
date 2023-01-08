@@ -1,0 +1,252 @@
+---- DIJKSTRA --------------------------
+
+Maze ../data/maze-task-second.txt, size 38 x 20.
+
+Legend: A = up to 20 steps, B = up to 150 steps,
+C = up to 200 steps, O = more than 200 steps
+
+Intermediate state at 20th step
+
+######################################
+#       # ###      ##    ###  #      #
+# ### # #     ### #### #  ##  # ###  #
+#   # # # ##### #       #  ## # # #  #
+# ### #   ##    #######  # #  # # #  #
+#   # # # #  ## #aaaaaa# # #    # #  #
+# ### # # # #   #a####b# # # ## # #  #
+#   # # # # # ###aaaa# # # #         #
+# # # # ### # #a####a# # #   #########
+#   # #   # # #aaa^aa# # # # #       #
+# # # ## ## # ## ##### # # #   ##### #
+#   #     # #    #   # # # #####     #
+# #########  ##### # ##  #       #####
+#         ##       #    ## ####### # E
+######### ################ #       # #
+#         #            #     ####### #
+# ######### ###### # # # #####       #
+#   #   #   #      # # ### # # #######
+# #   #   # # #### # #               #
+######################################
+
+
+
+Intermediate state at 150th step
+
+######################################
+#bbbbbbb#b###bbbbbb##bbbb###  #      #
+#b###b#b#bbbbb###b####b#bb##  # ###  #
+#bbb#b#b#b#####b#bbbbbbb#bb## # # #  #
+#b###b#bbb##bbbb#######bb#b#  # # #  #
+#bbb#b#b#b#bb##b#aaaaaa#b#b#    # #  #
+#b###b#b#b#b#bbb#a####b#b#b# ## # #  #
+#bbb#b#b#b#b#b###aaaa#b#b#c#         #
+# # # # ###b#b#a####a#b#b#   #########
+#   # #   #b#b#aaa^aa#b#b# # #       #
+# # # ## ##b#b##b#####b#b# #   ##### #
+#   #     #b#bbbb#bbb#b#b# #####     #
+# #########bb#####b#b##bb#       #####
+#         ##bbbbbbb#bbbb## ####### # E
+######### ################ #       # #
+#         #            #     ####### #
+# ######### ###### # # # #####       #
+#   #   #   #      # # ### # # #######
+# #   #   # # #### # #               #
+######################################
+
+
+
+Intermediate state at 200th step
+
+######################################
+#bbbbbbb#b###bbbbbb##bbbb###cc#cccccc#
+#b###b#b#bbbbb###b####b#bb##cc#c###cc#
+#bbb#b#b#b#####b#bbbbbbb#bb##c#c#c#cc#
+#b###b#bbb##bbbb#######bb#b#cc#c#c#cc#
+#bbb#b#b#b#bb##b#aaaaaa#b#b#cccc#c#cc#
+#b###b#b#b#b#bbb#a####b#b#b#c##c#c#cc#
+#bbb#b#b#b#b#b###aaaa#b#b#c#cccccc.  #
+#c#c#c#c###b#b#a####a#b#b#ccc#########
+#   # #   #b#b#aaa^aa#b#b# # #       #
+# # # ## ##b#b##b#####b#b# #   ##### #
+#   #     #b#bbbb#bbb#b#b# #####     #
+# #########bb#####b#b##bb#       #####
+#         ##bbbbbbb#bbbb## ####### # E
+######### ################ #       # #
+#         #            #     ####### #
+# ######### ###### # # # #####       #
+#   #   #   #      # # ### # # #######
+# #   #   # # #### # #               #
+######################################
+
+
+
+Final state at 351th step
+
+######################################
+#BBBBBBB#b###BBBBBb##bbbb###cc#cccccc#
+#B###b#B#BBBBB###B####b#bb##cc#c###cc#
+#Bbb#b#B#B#####b#BBBBBBB#bb##c#c#c#cc#
+#B###b#BBB##BBBB#######BB#b#cc#c#c#cc#
+#Bbb#b#b#b#BB##B#aaaaaa#B#b#cccc#c#cc#
+#B###b#b#b#B#BBB#a####b#B#b#c##c#c#cc#
+#Bbb#b#b#b#B#B###aaaa#b#B#c#cccccc...#
+#C#c#c#c###B#B#a####a#b#B#ccc#########
+#O..#.#...#B#B#aAA^aa#b#B#.#.#.......#
+#O#.#.##.##B#B##B#####b#B#.#...#####.#
+#O..#.....#B#BBBB#BBB#b#B#.#####.....#
+#O#########BB#####B#B##BB#.......#####
+#OOOOOOOOO##BBBBBBB#BBBB##.#######.#OE
+#########O################.#.......#O#
+#OOOOOOOOO#OOOOOOOOOOOO#.....#######O#
+#O#########O######.#.#O#.#####OOOOOOO#
+#OOO#OOO#OOO#......#.#O###.#.#O#######
+#.#OOO#OOO#.#.####.#.#OOOOOOOOO      #
+######################################
+
+
+
+Solution, path has 168 steps
+
+######################################
+#BBBBBBB# ###BBBBB ##    ###  #      #
+#B### #B#BBBBB###B#### #  ##  # ###  #
+#B  # #B#B##### #BBBBBBB#  ## # # #  #
+#B### #BBB##BBBB#######BB# #  # # #  #
+#B  # # # #BB##B#      #B# #    # #  #
+#B### # # #B#BBB# #### #B# # ## # #  #
+#B  # # # #B#B###    # #B# #         #
+#C# # # ###B#B# #### # #B#   #########
+#O  # #   #B#B# AA^  # #B# # #       #
+#O# # ## ##B#B##B##### #B# #   ##### #
+#O  #     #B#BBBB#BBB# #B# #####     #
+#O#########BB#####B#B##BB#       #####
+#OOOOOOOOO##BBBBBBB#BBBB## ####### #OE
+#########O################ #       #O#
+#OOOOOOOOO#OOOOOOOOOOOO#     #######O#
+#O#########O###### # #O# #####OOOOOOO#
+#OOO#OOO#OOO#      # #O### # #O#######
+# #OOO#OOO# # #### # #OOOOOOOOO      #
+######################################
+
+
+
+---- PLEDGE ----------------------------
+
+Maze ../data/maze-task-second.txt, size 38 x 20.
+
+Legend: A = up to 20 steps, B = up to 150 steps,
+C = up to 200 steps, O = more than 200 steps
+
+Intermediate state at 20th step
+
+######################################
+#       # ###      ##    ###  #      #
+# ### # #     ### #### #  ##  # ###  #
+#   # # # ##### #       #  ## # # #  #
+# ### #   ##    #######  # #  # # #  #
+#   # # # #  ## #AAAAAAAAAAB    # #  #
+# ### # # # #   #A#### # # # ## # #  #
+#   # # # # # ###AAAA# # # #         #
+# # # # ### # # ####A# # #   #########
+#   # #   # # #   ^AA# # # # #       #
+# # # ## ## # ## ##### # # #   ##### #
+#   #     # #    #   # # # #####     #
+# #########  ##### # ##  #       #####
+#         ##       #    ## ####### # E
+######### ################ #       # #
+#         #            #     ####### #
+# ######### ###### # # # #####       #
+#   #   #   #      # # ### # # #######
+# #   #   # # #### # #               #
+######################################
+
+
+
+Intermediate state at 150th step
+
+######################################
+#BBBBBBB#B###BBBBBB##BBBB###BB#BBBBBB#
+#B### #B#BBBBB###B####B#BB##BB#B### B#
+#B  # #B#B##### #BBBBBB #BB##B#B# # B#
+#B### #BBB##    #######  #B#BB#B# # B#
+#B  # # # #  ## #AAAAAAAAABBBBBBBBBBBB
+#B### # # # #   #A#### # # # ## # #  #
+#B  # # # # # ###AAAA# # # #         #
+#B# # # ### # # ####A# # #   #########
+#B  # #   # # #   ^AA# # # # #       #
+#B# # ## ## # ## ##### # # #   ##### #
+#B  #     # #    #   # # # #####     #
+#B#########  ##### # ##  #       #####
+#BBBBBBBBB##       #    ## ####### # E
+#########B################ #       # #
+#BBBBBBBBB#            #     ####### #
+#B######### ###### # # # #####       #
+#BBB#BBB#C  #      # # ### # # #######
+#B#BBB#BBB# # #### # #               #
+######################################
+
+
+
+Intermediate state at 200th step
+
+######################################
+#BBBBBBB#B###BBBBBB##BBBB###BB#BBBBBB#
+#B### #B#BBBBB###B####B#BB##BB#B### B#
+#B  # #B#B##### #BBBBBB #BB##B#B# # B#
+#B### #BBB##    #######  #B#BB#B# # B#
+#B  # # # #  ## #AAAAAAAAABBBBBBBBBBBB
+#B### # # # #   #A#### # # # ## # #  #
+#B  # # # # # ###AAAA# # # #         #
+#B# # # ### # # ####A# # #   #########
+#B  # #   # # #   ^AA# # # # #       #
+#B# # ## ## # ## ##### # # #   ##### #
+#B  #     # #    #   # # # #####     #
+#B#########  ##### # ##  #       #####
+#BBBBBBBBB##       #    ## ####### # E
+#########B################ #       # #
+#BBBBBBBBB#CCCCCCCCCCCC#     ####### #
+#B#########C######C#C#C# #####       #
+#BBB#BBB#CCC#CCCCCC#C#C### # # #######
+#B#BBB#BBB#C#C####C#C#CCCCCCO        #
+######################################
+
+
+
+Final state at 225th step
+
+Solution, path has 191 steps
+
+######################################
+#BBBBBBB#B###BBBBBB##BBBB###BB#BBBBBB#
+#B### #B#BBBBB###B####B#BB##BB#B### B#
+#B  # #B#B##### #BBBBBB #BB##B#B# # B#
+#B### #BBB##    #######  #B#BB#B# # B#
+#B  # # # #  ## #AAAAAAAAABBBBBBBBBBBB
+#B### # # # #   #A#### # # # ## # #  #
+#B  # # # # # ###AAAA# # # #         #
+#B# # # ### # # ####A# # #   #########
+#B  # #   # # #   ^AA# # # # #       #
+#B# # ## ## # ## ##### # # #   ##### #
+#B  #     # #    #   # # # #####     #
+#B#########  ##### # ##  #       #####
+#BBBBBBBBB##       #    ## ####### #OE
+#########B################ #       #O#
+#BBBBBBBBB#CCCCCCCCCCCC#     #######O#
+#B#########C######C#C#C# #####OOOOOOO#
+#BBB#BBB#CCC#CCCCCC#C#C### # #O#######
+#B#BBB#BBB#C#C####C#C#CCCCCCOOOOOOOOO#
+######################################
+
+
+
+---- WALL FOLLOWER ---------------------
+
+Maze ../data/maze-task-second.txt, size 38 x 20.
+
+Legend: A = up to 20 steps, B = up to 150 steps,
+C = up to 200 steps, O = more than 200 steps
+
+Classic wall follower may not have a solution for
+an internal starting point if the maze is not
+simply connected. Try with pledge_enable = 1.
+

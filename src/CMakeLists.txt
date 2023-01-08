@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED OFF)
+project(maze_solver LANGUAGES C)
+
+add_executable(maze_solver maze_solver.c ../include/uniques.h)
+add_dependencies(maze_solver uniques)
+target_compile_options(maze_solver PUBLIC -O2 -Wno-unused-result)
+target_include_directories(maze_solver PUBLIC ../include)
+target_link_options(maze_solver PUBLIC -L../lib)
+target_link_libraries(maze_solver PUBLIC uniques)
